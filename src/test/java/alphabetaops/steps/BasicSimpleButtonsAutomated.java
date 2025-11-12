@@ -25,12 +25,13 @@ public class BasicSimpleButtonsAutomated extends SeleniumHooks{
         SimpleButtonPageMethods.clickOnSimpleButton(driver);
     }
 
-    @Test(priority = 6)
+    @Test(priority = 3)
     public void ClickOnTheButtonUnderIframe(){
         SimpleButtonPageMethods.clickOnButtonUnderIFrame(driver);
+        SimpleButtonPageMethods.switchBackToDefaultContent(driver);
     }
 
-    @Test(priority = 3)
+    @Test(priority = 6)
     public void ClickOnTheButtonUnderShadowRoot(){
         SimpleButtonPageMethods.clickOnButtonUnderShadowDom(driver);
     }

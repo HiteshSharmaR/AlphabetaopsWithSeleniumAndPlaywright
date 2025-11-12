@@ -10,8 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class DropDownPageMethods {
     public static WebDriverWait wait = new WebDriverWait(alphabetaops.steps.SeleniumHooks.driver, java.time.Duration.ofSeconds(10));
     public static void switchToDropDownIframe(WebDriver driver) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(alphabetaops.objects.DropDownPageObjects.I_FRAME_DROPDOWN_LOCATOR));
-        WebElement iframeElement = driver.findElement(alphabetaops.objects.DropDownPageObjects.I_FRAME_DROPDOWN_LOCATOR);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(DropDownPageObjects.I_FRAME_DROPDOWN_LOCATOR));
+        WebElement iframeElement = driver.findElement(DropDownPageObjects.I_FRAME_DROPDOWN_LOCATOR);
         driver.switchTo().frame(iframeElement);
     }
 
